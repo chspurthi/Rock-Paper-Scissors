@@ -1,0 +1,117 @@
+body {
+    background-color: beige;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #42361e;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h5 {
+    margin: 0;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 42px;
+    color: #42361e;
+}
+
+.change_msg {
+    margin: 0 auto;
+    background-color: aliceblue;
+    height: 50px;
+    width: 90%; /* Responsive width */
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#resultText {
+    font-size: 24px;
+}
+
+.user, .machine {
+    text-align: center;
+    color: #6f684e;
+    margin: 20px auto;
+    max-width: 90%;
+}
+
+.choices, .machineout {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+    margin-bottom: 20px;
+}
+
+.choice, .machine-choice {
+    border: none;
+    background-color: transparent;
+    flex: 1 1 100px; /* Flexible size */
+    max-width: 150px;
+}
+
+.game-image {
+    border-radius: 20px;
+    height: 120px;
+    width: 120px;
+    padding: 5px;
+    transition: transform 0.3s ease; /* Hover animation */
+}
+
+.game-image:hover {
+    transform: scale(1.1);
+}
+
+.SelectedBorder {
+    border: 5px solid green;
+    border-radius: 10px;
+}
+
+.machinelose {
+    border: 5px solid red;
+    border-radius: 10px;
+}
+
+.creator {
+    text-align: right;
+    padding: 10px;
+}
+
+h5 {
+    font-size: 14px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    .game-image {
+        height: 100px;
+        width: 100px;
+    }
+
+    #resultText {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    .game-image {
+        height: 80px;
+        width: 80px;
+    }
+
+    #resultText {
+        font-size: 18px;
+    }
+}

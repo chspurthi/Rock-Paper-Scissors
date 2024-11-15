@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ROCK PAPER SCISSORS</title>
+    <link rel="stylesheet" href="RPStyle.css">
+</head>
+<body>
+    <h1 style="text-align: center; font-size: 42px">Rock Paper Scissors</h1>
+    <div class="change_msg">
+        <h2 id="resultText">WINNERS!!</h2>
+    </div>
+
+    <div class="user">
+        <h1>USER'S GAME</h1>
+        <div class="choices">
+            <button class="choice user-rock" onclick="playGame('rock')">
+                <img src="images/rock.jpg" alt="rock" class="game-image" />
+            </button>
+            <button class="choice user-paper" onclick="playGame('paper')">
+                <img src="images/paper.jpg" alt="paper" class="game-image" />
+            </button>
+            <button class="choice user-scissors" onclick="playGame('scissors')">
+                <img src="images/scissors.jpg" alt="scissors" class="game-image" />
+            </button>
+        </div>
+    </div>
+
+    <div class="machine">
+        <h1>MACHINE'S GAME</h1>
+        <div class="machineout">
+            <div class="machine-choice outrock">
+                <img src="images/rock.jpg" alt="rock" class="game-image" />
+            </div>
+            <div class="machine-choice outpaper">
+                <img src="images/paper.jpg" alt="paper" class="game-image" />
+            </div>
+            <div class="machine-choice outscissors">
+                <img src="images/scissors.jpg" alt="scissors" class="game-image" />
+            </div>
+        </div>
+    </div>
+    <div class="creator" style="text-align:right;">
+        <h5>created by chinta_sputhi</h5>
+    </div>
+
+  <script src="RPScript.js"></script>
+</body>
+</html>
