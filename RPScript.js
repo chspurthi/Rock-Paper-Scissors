@@ -16,7 +16,7 @@ function playGame(userChoice) {
     if (userChoice === computerChoice) {
         machineSelectedDiv.classList.add("SelectedBorder");
         userSelectedDiv.classList.add("SelectedBorder");
-        result = "It's a tie!";
+        result = "IT'S A TIE!";
     } else if (
         (userChoice === "rock" && computerChoice === "scissors") ||
         (userChoice === "paper" && computerChoice === "rock") ||
